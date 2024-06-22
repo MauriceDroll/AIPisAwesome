@@ -40,7 +40,7 @@ def run_git_commands(commit_message):
         username = os.getenv('GIT_USERNAME')
         token = os.getenv('GIT_TOKEN')
         
-        git_push_command = f"git push https://{username}:{token}@github.com/MauriceDroll/AIPisAwesome main"
+        git_push_command = f"git push https://{token}:@github.com/MauriceDroll/AIPisAwesome main"
         execute_command(git_push_command)
         
     except subprocess.CalledProcessError as e:
